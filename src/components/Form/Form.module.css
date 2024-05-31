@@ -1,0 +1,12 @@
+.wrapper {
+  padding: 30px 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  height: 520px;
+  background-color: #f4f5f4;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}

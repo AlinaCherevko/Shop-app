@@ -1,29 +1,29 @@
-import {
-  HeaderContainer,
-  Navigation,
-  StyledLink,
-  IconWrapper,
-} from './Header.styled';
-import sprite from 'assets/sprite.svg';
+//import React from "react";
+import { useSelector } from "react-redux";
+import { basketSelector } from "../../redux/selectors";
+import { NavLink } from "react-router-dom";
+import css from "./Header.module.css";
 
-export const Header = () => {
-
+const Header = () => {
+  const goodsInBasket = useSelector(basketSelector);
+  const totalPrice = goodsInBasket.reduce((prevValue, item) => {
+    return prevValue + +item.price * item.quantity;
+  }, 0);
   return (
-    <HeaderContainer>
-      <Navigation>
-        <StyledLink to="/first">
-          <IconWrapper>
-            <use href={`${sprite}#icon-logo`} />
-          </IconWrapper>
-          First
-        </StyledLink>
-        <StyledLink to="/second">
-          <IconWrapper>
-            <use href={`${sprite}#icon-logo`} />
-          </IconWrapper>
-          Second
-        </StyledLink>
-      </Navigation>
-    </HeaderContainer>
+    <header className={css.siteHeader}>
+      <NavLink className={css.headerNavigation} to="/">
+        Goods
+      </NavLink>
+      <div className={css.wrapper}>
+        <NavLink className={css.headerNavigation} to="/cards">
+          <img src="./cart.svg" alt="basket" />
+        </NavLink>
+        {goodsInBasket.length > 0 && (
+          <p className={css.total}>{totalPrice.toFixed(2)} ₴</p>
+        )}
+      </div>
+    </header>
   );
 };
+
+export default Header;

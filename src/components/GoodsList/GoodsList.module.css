@@ -1,0 +1,8 @@
+.list {
+  width: calc(250px * 4 + 20px * 3);
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 20px;
+}

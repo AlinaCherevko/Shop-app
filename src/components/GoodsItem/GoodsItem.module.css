@@ -1,0 +1,33 @@
+.item {
+  padding: 15px;
+  width: 250px;
+  height: 250px;
+  border: 1px solid #b3b9b2;
+  border-radius: 6px;
+  text-align: center;
+  transition: box-shadow 0.25s;
+  background-color: #f4f5f4;
+}
+.item:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+.name {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+.price {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 60px;
+}
+.btnWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.quantity {
+  font-size: 24px;
+  font-weight: 500;
+  margin-left: 6px;
+  margin-right: 6px;
+}

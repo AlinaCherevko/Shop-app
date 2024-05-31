@@ -1,0 +1,42 @@
+[
+  {
+    "price": "100",
+    "name": "Cake",
+    "id": "1"
+  },
+  {
+    "price": "120",
+    "name": "Pizza",
+    "id": "2"
+  },
+  {
+    "price": "20",
+    "name": "Cola",
+    "id": "3"
+  },
+  {
+    "price": "50",
+    "name": "Sweet",
+    "id": "4"
+  },
+  {
+    "price": "55",
+    "name": "Orange",
+    "id": "5"
+  },
+  {
+    "price": "200",
+    "name": "Berry",
+    "id": "6"
+  },
+  {
+    "price": "40",
+    "name": "Milk",
+    "id": "7"
+  },
+  {
+    "price": "150",
+    "name": "Butter",
+    "id": "8"
+  }
+]

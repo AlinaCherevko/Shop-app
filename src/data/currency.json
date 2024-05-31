@@ -1,0 +1,17 @@
+[
+  {
+    "currency": "₴",
+    "exchangeRate": 1,
+    "name": "UAN"
+  },
+  {
+    "currency": "$",
+    "exchangeRate": 0.0244,
+    "name": "USD"
+  },
+  {
+    "currency": "€",
+    "exchangeRate": 0.0224,
+    "name": "EUR"
+  }
+]
