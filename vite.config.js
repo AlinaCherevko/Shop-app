@@ -21,6 +21,14 @@ export default defineConfig({
   },
   server: {
     historyApiFallback: true,
+    proxy: {
+      '/api': {
+        target:
+          'https://shop-app-orders-default-rtdb.europe-west1.firebasedatabase.app',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/api/, ''),
+      },
+    },
   },
   base: '/Shop-app',
 });
